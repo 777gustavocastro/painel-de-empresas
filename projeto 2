@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Status - Empresas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .status-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .status-table th, .status-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .status-table th {
+            background-color: #f8f8f8;
+            color: #555;
+        }
+        .status-table img {
+            width: 50px;
+            height: auto;
+        }
+        .progress-bar {
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        .progress-bar div {
+            height: 100%;
+            background-color: #4caf50;
+            border-radius: 5px;
+        }
+        .status-circle {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .status-circle.green {
+            background-color: #4caf50;
+        }
+        .status-circle.red {
+            background-color: #f44336;
+        }
+        .button-link {
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Status das Empresas</h1>
+        <table class="status-table">
+            <thead>
+                <tr>
+                    <th>Logotipo</th>
+                    <th>Nome</th>
+                    <th>Bandeira</th>
+                    <th>Status</th>
+                    <th>Faturamento</th>
+                    <th>Site Oficial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Apple -->
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo"></td>
+                    <td>Apple</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Bandeira dos EUA"></td>
+                    <td><span class="status-circle green"></span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div style="width: 85%;"></div>
+                        </div>
+                        85%
+                    </td>
+                    <td><a href="https://www.apple.com" class="button-link" target="_blank">Visitar</a></td>
+                </tr>
+                <!-- Google (Alphabet) -->
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo"></td>
+                    <td>Google (Alphabet)</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Bandeira dos EUA"></td>
+                    <td><span class="status-circle green"></span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div style="width: 90%;"></div>
+                        </div>
+                        90%
+                    </td>
+                    <td><a href="https://www.abc.xyz" class="button-link" target="_blank">Visitar</a></td>
+                </tr>
+                <!-- Microsoft -->
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo"></td>
+                    <td>Microsoft</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Bandeira dos EUA"></td>
+                    <td><span class="status-circle green"></span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div style="width: 75%;"></div>
+                        </div>
+                        75%
+                    </td>
+                    <td><a href="https://www.microsoft.com" class="button-link" target="_blank">Visitar</a></td>
+                </tr>
+                <!-- Amazon -->
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo"></td>
+                    <td>Amazon</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Bandeira dos EUA"></td>
+                    <td><span class="status-circle green"></span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div style="width: 80%;"></div>
+                        </div>
+                        80%
+                    </td>
+                    <td><a href="https://www.amazon.com" class="button-link" target="_blank">Visitar</a></td>
+                </tr>
+                <!-- Tesla -->
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg" alt="Tesla Logo"></td>
+                    <td>Tesla</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Bandeira dos EUA"></td>
+                    <td><span class="status-circle green"></span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div style="width: 85%;"></div>
+                        </div>
+                        85%
+                    </td>
+                    <td><a href="https://www.tesla.com" class="button-link" target="_blank">Visitar</a></td>
+                </tr>
+                <!-- Samsung -->
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung Logo"></td>
+                    <td>Samsung</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="Bandeira da Coreia do Sul"></td>
+                    <td><span class="status-circle green"></span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div style="width: 78%;"></div>
+                        </div>
+                        78%
+                    </td>
+                    <td><a href="https://www.samsung.com" class="button-link" target="_blank">Visitar</a></td>
+                </tr>
+		<!-- BMW -->
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW Logo"></td>
+                    <td>BMW</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" alt="Bandeira da Alemanha"></td>
+                    <td><span class="status-circle green"></span></td>
+                    <td>
+                        <div class="progress-bar">
+                            <div style="width: 75%;"></div>
+                        </div>
+                        75%
+                    </td>
+                    <td><a href="https://www.bmw.com" class="button-link" target="_blank">Visitar</a></td>
+                </tr>
